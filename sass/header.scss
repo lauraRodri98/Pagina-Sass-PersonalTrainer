@@ -1,0 +1,40 @@
+@import 'partials/variables';
+
+header{
+    background: rgb(31, 31, 31);
+    padding: 10px 20px;
+    margin-top: -10px;
+
+    ul{
+        display: flex;
+        align-items: center;
+        flex-flow: wrap row;
+    }
+
+    li{
+        display: inline;
+        padding-right: 20px;
+    }
+
+    .icono {
+        font-size: 20px;
+        margin-right: auto;
+    }
+
+    .icono a{
+        color: $COLOR-NARANJA;
+    }
+
+    a:hover{
+        color:$COLOR-HOVER;
+    }
+
+    a{
+        text-decoration: none;
+        color: antiquewhite;
+        padding: 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    }
+}

@@ -1,0 +1,197 @@
+@import 'partials/mixins';
+
+body{
+    background: rgb(22, 22, 22);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main{
+    .descripcion{
+        height: 500px;
+        background-image: linear-gradient(transparent 50%, rgb(18,18,18) 95%), url(/imagenes/descripcion.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+
+        h1, p{
+            grid-column: 2/3;
+            color: aliceblue;
+            padding-right: 40px;
+        }
+        h1{
+            font-size: 35px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: $COLOR-NARANJA;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .servicios{
+        padding: 80px;
+        background-color: $COLOR-OSCURO;
+        h1{
+            color: aliceblue;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        article{
+            max-width: 900px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            margin: 0 auto; 
+            gap: 20px;
+        }
+        
+        .card{
+            @include cards;
+            img{
+                width: 100%;
+                border-radius: 2px 2px 0px 0px;
+            }
+        }
+    }
+    .nutri{
+        background: url(/imagenes/main/fondo2.jpeg);
+        padding: 0px 40px;
+        margin-top: 50px;
+        height: 300px;
+        display:grid;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        color: aliceblue;
+    }
+    .galeria{
+        padding: 80px 0px;
+        .fondoGaleria{
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            padding: 20px 0px;
+            grid-template-columns:1fr 1.5fr 1fr;
+            grid-template-rows:repeat(2, 1fr);
+            gap:10px;
+    
+            .img1{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                @include imagen;
+            }
+            .img2{
+                grid-column: 1/2;
+                grid-row: 2/3;
+                @include imagen;
+            }
+            .img3{
+                grid-column: 2/3;
+                grid-row: 1/3;
+                @include imagen;
+            }
+            .img4{
+                grid-column: 3/4;
+                grid-row: 1/2;
+                @include imagen;
+            }
+            .img5{
+                grid-column: 3/4;
+                grid-row: 2/3;
+                @include imagen;
+            }
+        }
+    }
+
+    .precios{
+        padding-bottom: 100px;
+        padding: 120px 0px;
+        .fondo{
+            display: grid;
+            margin: 0 auto;
+            max-width: 700px;
+            gap: 25px;
+            grid-template-rows: 40px 1fr;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            align-items: center;
+
+            h1{
+                text-align: center;
+                grid-column: 2/3;
+                color: azure;
+                font-weight: 400;
+                font-size: 40px;
+                padding-bottom: 20px;
+            }
+            div{
+                @include precios;
+            }
+    
+            .titulo{
+                font-size: 20px;
+            }
+    
+            .precio1, .precio3{
+                grid-row: 2/3;
+                background: $COLOR-NARANJA;
+            }
+            .precio2{
+                grid-row: 2/3;
+                background:$COLOR-NARANJAOSCURO ;
+            }
+            a input{
+                @include boton;
+            }
+        }     
+    }
+}
+
+
+// Servicios
+main{
+    h1{
+        color: $COLOR-NARANJA;
+        text-align: center;
+    }
+    .text{
+        text-align: center;
+        color: aliceblue;
+    }
+}
+
+.card-servicios-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap:20px;
+    max-width: 700px;
+    margin:0 auto;
+    padding-top: 50px;
+
+    .card-servicios{
+        text-align: center;
+        border-radius: 5px;
+        img{
+            width:100%;
+            border-radius: 5px 5px 0px 0px;
+        }
+        background: rgb(255, 247, 237);
+        box-shadow: 0px 0px 12px black;
+        transition: all 1s ease;
+        h3 {
+            color:$COLOR-NARANJA;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+    }
+    .card-servicios:hover{
+        border: 3px solid $COLOR-NARANJA;
+        transform: translateY(-8px);
+
+    }
+}
+
+

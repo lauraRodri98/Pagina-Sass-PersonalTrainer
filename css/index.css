@@ -1,0 +1,331 @@
+header {
+  background: rgb(31, 31, 31);
+  padding: 10px 20px;
+  margin-top: -10px;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  flex-flow: wrap row;
+}
+header li {
+  display: inline;
+  padding-right: 20px;
+}
+header .icono {
+  font-size: 20px;
+  margin-right: auto;
+}
+header .icono a {
+  color: #ffa600;
+}
+header a:hover {
+  color: #c0c0c0;
+}
+header a {
+  text-decoration: none;
+  color: antiquewhite;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: rgb(22, 22, 22);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main .descripcion {
+  height: 500px;
+  background-image: linear-gradient(transparent 50%, rgb(18, 18, 18) 95%), url(/imagenes/descripcion.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+}
+main .descripcion h1, main .descripcion p {
+  grid-column: 2/3;
+  color: aliceblue;
+  padding-right: 40px;
+}
+main .descripcion h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffa600;
+}
+main .descripcion p {
+  font-size: 20px;
+}
+main .servicios {
+  padding: 80px;
+  background-color: rgb(18, 18, 18);
+}
+main .servicios h1 {
+  color: aliceblue;
+  font-size: 50px;
+  text-align: center;
+}
+main .servicios article {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin: 0 auto;
+  gap: 20px;
+}
+main .servicios .card {
+  border-radius: 2px;
+  text-align: center;
+  background-color: #ffa600;
+  color: #fff;
+  font-size: 20px;
+  border: 2px;
+}
+main .servicios .card img {
+  width: 100%;
+  border-radius: 2px 2px 0px 0px;
+}
+main .nutri {
+  background: url(/imagenes/main/fondo2.jpeg);
+  padding: 0px 40px;
+  margin-top: 50px;
+  height: 300px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+}
+main .galeria {
+  padding: 80px 0px;
+}
+main .galeria .fondoGaleria {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  padding: 20px 0px;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+main .galeria .fondoGaleria .img1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .galeria .fondoGaleria .img2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .galeria .fondoGaleria .img3 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .galeria .fondoGaleria .img4 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .galeria .fondoGaleria .img5 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .precios {
+  padding-bottom: 100px;
+  padding: 120px 0px;
+}
+main .precios .fondo {
+  display: grid;
+  margin: 0 auto;
+  max-width: 700px;
+  gap: 25px;
+  grid-template-rows: 40px 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  align-items: center;
+}
+main .precios .fondo h1 {
+  text-align: center;
+  grid-column: 2/3;
+  color: azure;
+  font-weight: 400;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+main .precios .fondo div {
+  text-align: center;
+  padding: 20px 15px;
+  color: #fff;
+  width: 200px;
+}
+main .precios .fondo .titulo {
+  font-size: 20px;
+}
+main .precios .fondo .precio1, main .precios .fondo .precio3 {
+  grid-row: 2/3;
+  background: #ffa600;
+}
+main .precios .fondo .precio2 {
+  grid-row: 2/3;
+  background: #c36100;
+}
+main .precios .fondo a input {
+  margin-top: 10px;
+  padding: 10px 10px;
+  border-radius: 3px;
+  color: #fff;
+  border: 0px solid;
+  background: rgb(22, 22, 22);
+}
+
+main h1 {
+  color: #ffa600;
+  text-align: center;
+}
+main .text {
+  text-align: center;
+  color: aliceblue;
+}
+
+.card-servicios-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.card-servicios-container .card-servicios {
+  text-align: center;
+  border-radius: 5px;
+  background: rgb(255, 247, 237);
+  box-shadow: 0px 0px 12px black;
+  transition: all 1s ease;
+}
+.card-servicios-container .card-servicios img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+.card-servicios-container .card-servicios h3 {
+  color: #ffa600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.card-servicios-container .card-servicios:hover {
+  border: 3px solid #ffa600;
+  transform: translateY(-8px);
+}
+
+footer {
+  height: 300px;
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(62, 62, 62);
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  clip-path: polygon(0 0, 100% 34%, 100% 100%, 0% 100%);
+}
+
+.bodyContact {
+  height: 100%;
+  font-family: "Noto Sans", sans-serif;
+  background: url(/imagenes/main/fondoContactos.jpg);
+}
+.bodyContact .contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+}
+.bodyContact .contact_form input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffa600;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.bodyContact .contact_form textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffa600;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+.bodyContact .contact_form label {
+  display: block;
+  float: center;
+}
+.bodyContact .contact_form button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ffa600;
+  border: 0px solid;
+  border-style: solid;
+  border-radius: 5px;
+  width: 420px;
+  cursor: pointer;
+}
+.bodyContact .contact_form button p {
+  color: #fff;
+}
+.bodyContact .contact_form span {
+  color: #ffa600;
+}
+.bodyContact .contact_form .aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+.bodyContact .contact_form h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: #ffa600;
+}
+.bodyContact .contact_form h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+.bodyContact .contact_form p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+/*# sourceMappingURL=index.css.map */
